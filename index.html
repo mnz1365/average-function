@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>23,4,5,65,3,23,4,546,4,23,4</p>
+    <p id="p1"></p>
+
+    <script>
+        function myfunc(numbers){
+            var average = 1;
+            var sum = 0;
+
+            for(var i=0;i<numbers.length;i++){
+                sum += numbers[i];
+
+            }
+
+            average = sum / numbers.length;
+            return document.getElementById("p1").innerHTML = average;
+        }
+
+        myfunc([23,4,5,65,3,23,4,546,4,23,4]);
+    </script>
+</body>
+</html>
